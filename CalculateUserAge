@@ -1,0 +1,12 @@
+#Name: Shreshta Chowdhury
+#Student#: 162886196
+#Course: OPS445NBB
+
+#!
+def AgeCalculator():
+  #asks user input for their birth year and current year
+  birthyear = input('Enter your birth year: ')
+  currentyear = input('Enter current year: ')
+  #calculates user age
+  age = int(currentyear) - int(birthyear)
+  return age
