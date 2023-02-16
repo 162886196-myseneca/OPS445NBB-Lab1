@@ -10,7 +10,10 @@ def AgeCalculator():
   #calculates user age
   age = int(currentyear) - int(birthyear)
   return age
-
-  
+ 
 print(AgeCalculator())
 
+def helloWorld():
+  print("Hello World")
+  
+helloWorld()
