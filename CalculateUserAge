@@ -4,13 +4,16 @@
 
 #!
 def AgeCalculator():
-  #asks user input for their birth year and current year
-  birthyear = input('Enter your birth year: ')
-  currentyear = input('Enter current year: ')
-  #calculates user age
-  age = int(currentyear) - int(birthyear)
-  return age
- 
+  try:
+    #asks user input for their birth year and current year
+    birthyear = input('Enter your birth year: ')
+    currentyear = input('Enter current year: ')
+    #calculates user age
+    age = int(currentyear) - int(birthyear)
+    return age
+  except(UserError):
+    return("You can only enter an integer")
+    
 print(AgeCalculator())
 
 def helloWorld():
